@@ -13,7 +13,7 @@ public_folder: assets
 
 collections:
   - name: platform
-    label: Platorm
+    label: Platform
     folder: platform
     create: true
     fields:
