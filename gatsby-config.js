@@ -17,7 +17,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `platforms`,
-        path: `${__dirname}/src/pages/platforms`,
+        path: `${__dirname}/src/platforms/`,
       },
     },
     `gatsby-plugin-netlify-cms`,

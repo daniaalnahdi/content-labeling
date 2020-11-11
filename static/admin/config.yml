@@ -1,6 +1,12 @@
 backend:
   name: github
   repo: daniaalnahdi/content-labeling
+  commit_messages:
+    create: Create {{collection}}
+    update: Update {{collection}}
+    delete: Delete {{collection}}
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
 
 media_folder: static/assets
 public_folder: assets
