@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: daniaalnahdi/content-labeling
+  name: git-gateway
+  branch: master
   commit_messages:
     create: Create {{collection}}
     update: Update {{collection}}
