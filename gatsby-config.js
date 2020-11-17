@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Ethics of Content Labeling`,
+    title: `Wiki and Policy Dimensions Tool`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `platforms`,
-        path: `${__dirname}/src/pages/platforms/`,
+        name: `content`,
+        path: `${__dirname}/src/content`,
       },
     },
     `gatsby-plugin-netlify-cms`,
