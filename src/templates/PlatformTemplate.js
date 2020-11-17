@@ -12,12 +12,13 @@ const PlatformTemplate = ({ data }) => {
     <Layout>
       <SEO title={`Platforms | ${frontmatter.title}`} />
       <h1>{frontmatter.title}</h1>
-      <h2>
-        <a href={frontmatter.spreadsheet} target="_blank" rel="noopener noreferrer">
-          View Spreadsheet
-        </a>
-      </h2>
       <section dangerouslySetInnerHTML={{ __html: html }} />
+      <iframe
+        title={`${frontmatter.title} Data`}
+        width="100%"
+        height="500"
+        src={frontmatter.spreadsheet}
+      ></iframe>
     </Layout>
   )
 }

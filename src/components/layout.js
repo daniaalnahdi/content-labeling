@@ -39,9 +39,9 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built at
+          © {new Date().getFullYear()}, Built at{" "}
           <a href="https://cssh.northeastern.edu/informationethics/">
-            Northeastern University
+            The Ethics Institue at Northeastern University
           </a>
         </footer>
       </div>

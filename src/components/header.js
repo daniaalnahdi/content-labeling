@@ -1,6 +1,8 @@
+import React from "react"
 import { Link, StaticQuery } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+
+import Image from "../components/image"
 
 const Header = ({ siteTitle }) => {
   return (
@@ -24,7 +26,7 @@ const Header = ({ siteTitle }) => {
       render={({ allFile }) => (
         <header
           style={{
-            background: `rebeccapurple`,
+            background: `maroon`,
             marginBottom: `1.45rem`,
           }}
         >
@@ -35,6 +37,9 @@ const Header = ({ siteTitle }) => {
               padding: `1.45rem 1.0875rem`,
             }}
           >
+            <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+              <Image />
+            </div>
             <h1 style={{ margin: 0 }}>
               <Link
                 to="/"
@@ -57,7 +62,7 @@ const Header = ({ siteTitle }) => {
               {allFile.edges.map(({ node }, index) => (
                 <li key={index}>
                   <Link
-                    to={node.relativeDirectory}
+                    to={`/${node.relativeDirectory}`}
                     style={{ color: `white`, textTransform: `capitalize` }}
                   >
                     {node.relativeDirectory}
