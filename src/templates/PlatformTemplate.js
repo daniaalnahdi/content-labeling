@@ -18,8 +18,9 @@ const PlatformTemplate = ({ data }) => {
 }
 
 export const query = graphql`
-  query PlatformQuery($platformSlug: String!) {
-    markdownRemark(fields: { slug: { eq: $platformSlug } }) {
+  query PlatformQuery($platformId: String!) {
+    markdownRemark(id: { eq: $platformId }) {
+      id
       fields {
         slug
       }

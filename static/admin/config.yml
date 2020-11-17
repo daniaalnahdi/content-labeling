@@ -19,3 +19,4 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      - { name: spreadsheet, label: Spreadsheet, widget: string}

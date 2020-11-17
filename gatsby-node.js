@@ -21,6 +21,7 @@ exports.createPages = ({ graphql, actions }) => {
       allMarkdownRemark {
         edges {
           node {
+            id
             fields {
               slug
             }
@@ -37,7 +38,7 @@ exports.createPages = ({ graphql, actions }) => {
       createPage({
         path: `/platforms${node.fields.slug}`,
         component: platformTemplate,
-        context: { platformSlug: node.fields.slug },
+        context: { platformId: node.id },
       })
     })
   })
