@@ -36,7 +36,7 @@ collections:
           widget: string,
           pattern:
             [
-              "^(http(s)?:\/\/)[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$",
+              "^(http|https)://",
               "Must be a valid URL",
             ],
           hint: "Link to the platform's spreadsheet (eg. Google Sheets link).",
