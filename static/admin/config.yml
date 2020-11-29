@@ -32,4 +32,3 @@ collections:
         }
       - { name: spreadsheet, label: Spreadsheet, widget: string }
       - { name: body, label: Body, widget: markdown }
-    slug: 
