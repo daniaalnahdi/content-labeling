@@ -1,8 +1,10 @@
 ---
 title: Instagram
+slug: instagram
 spreadsheet: https://docs.google.com/spreadsheets/d/1jiRvb1AGuferhBb0s4lfOJbfDntKRJWRSO86YF9FyOI/edit#gid=1838698303
 ---
-Instagram is a social networking site where users can upload photos and vidoes, accompanied by text and hashtags. According to the [Instagram business page](https://business.instagram.com/), the platform has over 1 billion Instagram active accounts accounted for every month. 
+
+Instagram is a social networking site where users can upload photos and vidoes, accompanied by text and hashtags. According to the [Instagram business page](https://business.instagram.com/), the platform has over 1 billion Instagram active accounts accounted for every month.
 
 Since Instagram merged with the Facebook company, many of their content strategies and guidelines are shared. This includes the [Facebook: Remove, Reduce, and Inform](https://about.fb.com/news/2019/04/remove-reduce-inform-new-steps/) approach, as well as Instagram’s policies on [misinformation and third-party fact checkers](https://help.instagram.com/388534952086572) referring to Facebook guidelines.
 
