@@ -15,7 +15,7 @@ collections:
   - name: platform
     label: Platform
     folder: src/content/platforms
-    slug: "{ { fields.slug } }"
+    slug: "{{fields.slug}}"
     create: true
     fields:
       - { name: title, label: Title }
@@ -32,3 +32,4 @@ collections:
         }
       - { name: spreadsheet, label: Spreadsheet, widget: string }
       - { name: body, label: Body, widget: markdown }
+    slug: 
