@@ -34,6 +34,11 @@ collections:
           name: spreadsheet,
           label: Spreadsheet,
           widget: string,
-          hint: "URL for the platform's spreadsheet.",
+          pattern:
+            [
+              "/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/",
+              "Must be a valid URL",
+            ],
+          hint: "Link to the platform's spreadsheet (eg. Google Sheets link).",
         }
       - { name: body, label: Body, widget: markdown }
