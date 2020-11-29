@@ -15,6 +15,7 @@ collections:
   - name: platform
     label: Platform
     folder: src/content/platforms
+    slug: { { fields.slug } }
     create: true
     fields:
       - { name: title, label: Title }

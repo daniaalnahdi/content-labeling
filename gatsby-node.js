@@ -24,7 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
-        path: `${node.frontmatter.slug}`,
+        path: `platforms/${node.frontmatter.slug}`,
         component: platformTemplate,
         context: { platformId: node.id },
       })
