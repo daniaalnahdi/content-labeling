@@ -15,8 +15,20 @@ collections:
   - name: platform
     label: Platform
     folder: src/content/platforms
+    slug: { { fields.slug } }
     create: true
     fields:
       - { name: title, label: Title }
+      - {
+          name: slug,
+          label: Slug,
+          widget: string,
+          pattern:
+            [
+              "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+              "A slug can have no spaces or special characters",
+            ],
+          hint: "Used to generate the page's URL (..../platforms/<slug>). Should match page title and must be unique.",
+        }
+      - { name: spreadsheet, label: Spreadsheet, widget: string }
       - { name: body, label: Body, widget: markdown }
-      - { name: spreadsheet, label: Spreadsheet, widget: string}

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -15,7 +15,7 @@ const PlatformsPage = ({ data }) => {
       <ul>
         {edges.map(({ node }, index) => (
           <li key={index}>
-            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+            <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
           </li>
         ))}
       </ul>
@@ -30,10 +30,8 @@ export const query = graphql`
     ) {
       edges {
         node {
-          fields {
-            slug
-          }
           frontmatter {
+            slug
             title
           }
         }

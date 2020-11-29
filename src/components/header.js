@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, StaticQuery } from "gatsby"
+import { graphql, StaticQuery, Link } from "gatsby"
 import PropTypes from "prop-types"
 
 import Image from "../components/image"
