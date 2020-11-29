@@ -1,5 +1,4 @@
 const path = require("path")
-const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -25,7 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
-        path: `${node.fields.slug}`,
+        path: `${node.frontmatter.slug}`,
         component: platformTemplate,
         context: { platformId: node.id },
       })

@@ -17,7 +17,7 @@ const PlatformTemplate = ({ data }) => {
         title={`${frontmatter.title} Data`}
         width="100%"
         height="500"
-        src={frontmatter.spreadsheet}
+        src={frontmatter.spreadsheet ? frontmatter.spreadsheet : ''}
       ></iframe>
     </Layout>
   )
